@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Espejo mágico</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/estilos-generales.css">
+    <link rel="stylesheet" href="css/espejo.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+</head>
+<body>
+    <h1>Espejo mágico</h1>
+    <h2>Cliente: <span id="nombre-usuario" class="nombre-usuario"></span></h2>
+
+    <div class="div-fila">
+        <div class="inline-block vertical-align-middle">
+            <div class="titulo-panel">Antes: </div>
+            <div class="div-panel">
+                <canvas id="panel" width="380" height="380"></canvas>
+            </div>
+        </div>
+        
+        <div class="inline-block vertical-align-middle">
+            <div class="titulo-panel">Después: </div>
+            <div id="div-crop-result" class="div-panel">
+                <img id="crop_result">
+            </div>
+        </div>
+        
+        <div class="inline-block vertical-align-middle">
+            <div class="titulo-panel">Seleccione un peinado: </div>
+            <div id="panel-peinados" class="div-panel"></div>
+        </div>
+    </div>
+
+    <div class="div-fila">
+        <div id="subir-imagen-contenedor" class="inline-block">
+            <button class="btn">Subir imagen</button>
+            <input id="input-imagen" type="file" accept="image/*">
+        </div>
+        <button id="cropImgButtn" class="btn inline-block vertical-align-middle">Recortar</button>
+        <button id="btn-descargar" class="btn inline-block vertical-align-middle">Guardar</button>
+        <button id="btn-limpiar" class="btn inline-block vertical-align-middle">Limpiar</button>
+    </div>
+
+    <div class="div-fila">
+        <div class="titulo-panel">Zoom: </div>
+        <input id='scaleSlider' type='range' min='-0.1' max='2.0' step='0.01' value='1.0'>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/cargar-usuario.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/canvas2image.js"></script>
+    <script src="js/html2canvas.js"></script>
+    <script src="js/crop.js"></script>
+</body>
+</html>

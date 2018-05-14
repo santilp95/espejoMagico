@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+    font-family: 'Cuprum', sans-serif;
+    background-color: aliceblue;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.block {
+    display: block;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.nombre-usuario {
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.btn {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    background: lightskyblue;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}

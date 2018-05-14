@@ -1,0 +1,25 @@
+#div-inicio-sesion {
+    border: 2px solid black;
+    margin: 200px auto auto auto;
+    width: 400px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+form label {
+    font-size: 1.5em;
+    margin: 10px auto;
+}
+
+form input {
+    font-size: 1.5em;
+    font-family: 'Cuprum', sans-serif;
+    margin: 10px auto;
+    text-align: center;
+}
+
+form button {
+    font-size: 1.5em;
+    font-family: 'Cuprum', sans-serif;
+    margin: 10px auto;
+}

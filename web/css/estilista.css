@@ -1,0 +1,8 @@
+.estilo {
+    display: inline-block;
+}
+
+.estilo-nombre-usuario {
+    font-size: 1.5em;
+    padding: 10px;
+}

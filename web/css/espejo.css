@@ -1,0 +1,99 @@
+h2 {
+    text-transform: uppercase;
+}
+
+button {
+    padding: 4px 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    font-family: 'Cuprum', sans-serif;
+}
+
+/* ================== */
+
+.inline-block {
+    display: inline-block;
+}
+
+.vertical-align-middle {
+    vertical-align: middle;
+}
+
+.div-fila {
+    margin: 25px;
+}
+
+.div-panel {
+    width: 380px;
+    height: 380px;
+    border: 10px solid lightgray;
+    background: white;
+}
+
+.titulo-panel {
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+/* ================== */
+
+#panel {
+    cursor: move;
+}
+
+#div-crop-result {
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 380px;
+    height: 380px;
+}
+
+#crop_result {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#panel-peinados {
+    overflow: auto;
+    text-align-last: left;
+}
+
+.peinado {
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.peinado-encima {
+    border: none;
+    width: 270px;
+    height: 360px;
+    position: absolute;
+    cursor: move;
+}
+
+#subir-imagen-contenedor {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle; 
+}
+
+#subir-imagen-contenedor .btn {
+    background: lightcoral;
+}
+
+#subir-imagen-contenedor input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}

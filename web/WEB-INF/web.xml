@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>GuardarPeinado</servlet-name>
+        <servlet-class>com.espejo.GuardarPeinado</servlet-class>
+        <multipart-config>
+            <location>/tmp</location>
+            <max-file-size>20848820</max-file-size>
+            <max-request-size>418018841</max-request-size>
+            <file-size-threshold>1048576</file-size-threshold>
+        </multipart-config>
+    </servlet>
+    <servlet>
+        <servlet-name>IniciarSesion</servlet-name>
+        <servlet-class>com.espejo.IniciarSesion</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CargarEstilos</servlet-name>
+        <servlet-class>com.espejo.CargarEstilos</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CargarEstilo</servlet-name>
+        <servlet-class>com.espejo.CargarEstilo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GuardarPeinado</servlet-name>
+        <url-pattern>/GuardarPeinado</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>IniciarSesion</servlet-name>
+        <url-pattern>/IniciarSesion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CargarEstilos</servlet-name>
+        <url-pattern>/CargarEstilos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CargarEstilo</servlet-name>
+        <url-pattern>/CargarEstilo</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

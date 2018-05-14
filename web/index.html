@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Espejo mágico</title>
+
+    <link rel="stylesheet" href="css/estilos-generales.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+</head>
+<body>
+    <h1>Espejo mágico</h1>
+
+    <div id="div-inicio-sesion">
+        <form id="form-iniciar-sesion" action="IniciarSesion" method="POST" autocomplete="off">
+            <label for="input-usuario" class="block">Usuario: </label>
+            <input id="input-usuario" class="block" name="usuario" type="text">
+
+            <label for="input-contrasenia" class="block">Contraseña: </label>
+            <input id="input-contrasenia" class="block" name="contrasenia" type="password">
+
+            <button id="btn-iniciar-sesion" class="btn">Iniciar sesión</button>
+        </form>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/inicio-sesion.js"></script>
+</body>
+</html>
